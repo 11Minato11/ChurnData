@@ -8,7 +8,6 @@ def convert_md_to_pdf(md_file, pdf_file):
         md_content = f.read()
 
     # Convert Markdown to HTML
-    # We add some CSS for a professional look
     html_content = markdown.markdown(md_content, extensions=['tables'])
     
     # Custom CSS for the PDF layout
